@@ -1,0 +1,60 @@
+#Banner {
+    background-color: white;
+    border-style: solid;
+    width: 500px;
+    height: 250px;
+    text-align: center;
+    align-items: center;
+    border: 5px solid black;
+    }
+    #Logo{
+    position: absolute;
+    top: 8px;
+    right: 860px;
+    background-color: white;
+    border-color: black;
+    border-style: solid;
+    width: 250px;
+    height: 250px;
+    border: 5px solid black;
+    text-align: center;
+    }
+    #Fondo{
+    background-color: green;
+    color: transparent !important;
+    height: 50px;
+    width: 750px;
+    border-style: solid !important;
+    border-color: black;
+    border: 5px solid black;
+    }
+    #Article{
+    background-color: white;
+    border-style: solid;
+    width: 450px;
+    height: 400px;
+    text-align: center;
+    border: 5px solid black;
+    align-items: center;
+    }
+    #aside{
+    position: absolute;
+    background-color: white;
+    border-color: black;
+    border-style: solid;
+    border: 5px solid black;
+    width: 300px;
+    height: 400px;
+    text-align: center;
+    right: 860px;
+    top: 326px;
+    }
+    #foot{
+    background-color: yellow !important;
+    color: transparent !important;
+    height: 50px;
+    width: 750px;
+    border: 5px solid black;
+    border-style: solid !important;
+    border-color: black;
+    }
