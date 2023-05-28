@@ -1,0 +1,29 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f1f1f1;
+  }
+  
+  h1 {
+    text-align: center;
+    color: #333;
+  }
+  
+  .interface {
+    display: inline-block;
+    margin: 20px;
+    text-align: center;
+  }
+  
+  .interface img {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    object-fit: cover;
+    box-shadow: 0 0 8px rgba(0, 0, 0, 0.2);
+  }
+  
+  .interface p {
+    margin-top: 10px;
+    font-weight: bold;
+  }
+  

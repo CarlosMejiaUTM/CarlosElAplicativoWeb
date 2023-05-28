@@ -1,0 +1,53 @@
+/* Estilos CSS para el diseño de la página */
+body {
+    font-family: Arial, sans-serif;
+  }
+  #encabezado {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+  }
+  #nav-izquierda {
+    display: flex;
+  }
+  #nav-izquierda a {
+    margin-right: 5px;
+    text-decoration: none;
+  }
+  .separador {
+    margin: 0 5px;
+  }
+  #nav-derecha {
+    display: flex;
+  }
+  #nav-derecha a {
+    margin-left: 10px;
+    text-decoration: none;
+  }
+  #barra-busqueda {
+    text-align: center;
+    padding: 20px;
+  }
+  #barra-busqueda h1 {
+    font-size: 40px;
+    margin-bottom: 10px;
+  }
+  #formulario-busqueda {
+    margin-bottom: 10px;
+  }
+  #contenedor-botones {
+    text-align: center;
+  }
+  #formulario-busqueda input[type="submit"] {
+    padding: 5px 10px;
+    margin-right: 5px;
+  }
+  #boton-suerte {
+    padding: 5px 10px;
+  }
+  #pie-pagina {
+    text-align: center;
+    padding: 20px;
+  }
+  
