@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Ejemplo de manipulación del texto de un elemento -->
+    <p id="p1">Hola Soy Carlo Mejia</p>
+    <script>
+    document.getElementById("p1").innerHTML = "¡holis de mi parte !";
+    </script>
+
+    <!-- Ejemplo de manipulación del texto y estilo de un encabezado -->
+    <h1 id="Titulo">jalou de carlos</h1>
+    <script>
+        const elemento = document.getElementById("titulo");
+        elemento.innerHTML = "mi encabezado de CJMG";
+        const element = document.getElementsByName("p");
+
+        // Ejemplo de obtener elementos por su identificador, nombre y clase
+        const x = document.getElementById("main");
+        console.log(x);
+
+        const y = document.getElementById("p");
+        console.log(y);
+
+        const z = document.getElementsByClassName("intro");
+        console.log(z)
+    </script>
+    
+    <!-- Ejemplo de obtener elementos por su clase -->
+    <p class="intro">ejemplo 1 de carlos mejia</p>
+    <p class="intro">ejemplo 2 de carlos mejia</p>
+
+    <script>
+        // Ejemplo de obtener elementos con querySelectorAll
+        const a = document.querySelectorAll("p.intro");
+    </script>
+    
+    <!-- Ejemplo de una lista desordenada -->
+    <ul id="miLista">
+        <li>Elemento 1 carlos</li>
+        <li>Elemento 2 carles</li>
+        <li>Elemento 3 carlis</li>
+        <li>Elemento 4 carlus</li>
+        <li>Elemento 5 carlas</li>
+    </ul>
+
+    <script>
+        // Ejemplo de obtener elementos de lista con querySelectorAll
+        const listItems = document.querySelectorAll("ul X li");
+        console.log(listItems);
+    </script>
+
+    <!-- Otro encabezado -->
+    <h1 id="b"> ejemplo otra vez</h1>
+    
+    <script>
+        // Ejemplo de obtener un elemento por su identificador
+        const h1elements = document.querySelector("h1");
+        console.log(h1elements);
+    </script>
+
+    <!-- Otra lista desordenada -->
+    <ul id="miLista">
+        <li>Elemento 1 carlos</li>
+        <li>Elemento 2 carles</li>
+        <li>Elemento 3 carlis</li>
+        <li>Elemento 4 carlus</li>
+        <li>Elemento 5 carlas</li>
+    </ul>
+
+    <script>
+        // Ejemplo de obtener un elemento por su nombre de etiqueta
+        const list1 = document.querySelector("miLista");
+        console.log(miLista);
+    </script>
+
+    <!-- Lista desordenada para iterar con forEach -->
+    <ul id="miListaForich">
+        <li>Elemento 1</li>
+        <li>Elemento 2</li>
+        <li>Elemento 3</li>
+        <li>Elemento 4</li>
+        <li>Elemento 5</li>
+    </ul>
+
+    <script>
+        // Ejemplo de iterar elementos de lista con forEach
+        const ListaDeForeach = document.querySelectorAll("ul > li");
+            
+        ListaDeForeach.forEach((miListaForich) => {
+            console.log(miListaForich.innerHTML);
+        });
+
+        // Cambiar el color del encabezado
+        const h1 = document.querySelector("h1");
+        h1.style.color = "blue";
+    </script>
+
+    <!-- Formulario con campos de entrada -->
+    <form id="frm1" onsubmit="return validacion()">
+        <label for="nombre">Nombre:</label>
+        <input type="text" id="nombre" name="nombre" >
+
+        <label for="edad">Edad:</label>
+        <input type="number" id="edad" name="edad" >
+
+        <label for="profesion">Profesión:</label>
+        <input type="text" id="profesion" name="profesion"  >
+
+        <input type="submit" value="Enviar">
+    </form>
+
+    <script>
+        // Ejemplo de obtener elementos del formulario y mostrarlos
+        const b = document.forms["frm1"];
+        let texto= "";
+        for(let i = 0 ; i< b.length; i++){
+            texto += b.elements [i].value + "<br>";
+        }
+
+        document.getElementById("p1").innerHTML = texto;
+        console.log(b);
+
+        // Crear una lista y agregar elementos
+        let listota = document.createElement("ul");
+        document.body.appendChild(listota);
+
+        let elemento1 = document.createElement("li");
+        elemento1.textContent = "Flor";
+        listota.appendChild(elemento1);
+
+        let elemento2 = document.createElement("li");
+        elemento2.textContent = "Jaguar";
+        listota.appendChild(elemento2);
+    </script>
+
+    <!-- Campo de entrada de número y botón de validación -->
+    <label for="numero">Número:</label>
+    <input type="text" id="numero" name="numero">
+
+    <button type="button" onclick="return validarNumero()">Validar</button>
+
+    <p id="demo"></p>
+    <script>
+        // Mostrar la fecha actual en el párrafo
+        document.getElementById("demo").innerHTML = "fecha" + Date();
+    </script>
+      
+    <script>
+        // Función para validar el número ingresado
+        function validarNumero() {
+            let e = document.getElementById("numero").value;
+            let texto;
+
+            if (isNaN(e) || e < 1 || e > 10) {
+                texto = "No válido";
+            } else {
+                texto = "Válido";
+            }
+
+            document.getElementById("demo").innerHTML = texto;
+
+            return false;
+        }
+    </script>
+
+    <script>
+        // Agregar un evento de clic al botón
+        const button = document.querySelector("input[type='submit']");
+        button.addEventListener("click", (event) => {
+            alert("¡Clickeado con éxito!");
+        });
+    </script>
+
+    <script>
+        // Función de validación del formulario
+        function validacion(){
+            let d = document.forms["frm1"]["profesion"].value;
+            if(d === ""){
+                alert("no pasas pa , llena todos los campos");
+                return false;
+            }
+            return true;
+        }
+    </script>
+ 
+    <!-- Imagen -->
+    <img id="myImage" src="fotos/moto-moto-president-of-mexico-mexico-city-party-of-the-democratic-revolution-politician-tshirt-politics-election-png-clipart.jpg" alt="Mi imagen">
+
+    <script>
+        // Cambiar la imagen al hacer clic
+        const imgElement = document.getElementById("myImage");
+        imgElement.src = "fotos/OIP.jpg";
+    </script>
+    
+    <p id="demo"></p>
+</body>
+</html>
