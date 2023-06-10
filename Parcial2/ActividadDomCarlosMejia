@@ -1,0 +1,64 @@
+<html>: Este elemento representa el contenido de una página HTML.
+<head>: El encabezado de la página que contiene información sobre el documento, como el título de la página y las referencias a archivos externos.
+<meta>: Proporciona metadatos sobre el documento HTML, como el conjunto de caracteres utilizado y la configuración de visualización.
+<title>: Define el título de la página web que se muestra en la barra de título del navegador.
+<link rel="stylesheet" href="styles.css">: Establece una conexión entre el documento HTML y un archivo CSS externo llamado "styles.css", que se utiliza para aplicar estilos a los elementos HTML.
+<body>: Contiene el contenido visible de la página web.
+<p id="p1">Hola Soy Carlo Mejia</p>: Define un párrafo con un identificador único "p1" y muestra el texto "Hola Soy Carlo Mejia".
+<script>: Sección donde se coloca el código JavaScript para agregar interactividad a la página web.
+document.getElementById("p1").innerHTML = "¡holis de mi parte !";: Utiliza el método getElementById para seleccionar el elemento con el identificador "p1" y cambia su contenido HTML a "¡holis de mi parte!".
+<h1 id="Titulo">jalou de carlos</h1>: Define un encabezado de nivel 1 con el identificador "Titulo" y muestra el texto "jalou de carlos".
+const elemento = document.getElementById("titulo");: Declara una constante llamada "elemento" que referencia al elemento con el identificador "titulo".
+elemento.innerHTML ="mi encabezado de CJMG";: Cambia el contenido HTML del elemento "elemento" a "mi encabezado de CJMG".
+const element = document.getElementsByName("p");: Declara una constante llamada "element" que referencia a los elementos con el nombre "p".
+const x = document.getElementById("main");: Declara una constante llamada "x" que referencia al elemento con el identificador "main".
+console.log(x);: Imprime el valor de "x" en la consola del navegador.
+const y = document.getElementById("p");: Declara una constante llamada "y" que referencia al elemento con el identificador "p".
+console.log(y);: Imprime el valor de "y" en la consola del navegador.
+const z = document.getElementsByClassName("intro");: Declara una constante llamada "z" que referencia a los elementos con la clase "intro".
+console.log(z): Imprime el valor de "z" en la consola del navegador.
+<p class="intro">ejemplo 1 de carlos mejia</p>: Define un párrafo con la clase "intro" y muestra el texto "ejemplo 1 de carlos mejia".
+<p class="intro">ejemplo 2 de carlos mejia</p>: Define otro párrafo con la clase "intro" y muestra el texto "ejemplo 2 de carlos mejia".
+const a = document.querySelectorAll(p.intro);: Declara una constante llamada "a" que referencia a los elementos con la etiqueta "p" y la clase "intro".
+<ul id="miLista">: Define una lista desordenada con el identificador "miLista".
+<li>Elemento 1 carlos</li> a <li>Elemento 5 carlas</li>: Define cinco elementos de lista dentro de la lista desordenada.
+const listItems = document.querySelectorAll("ul X li");: Declara una constante llamada "listItems" que referencia a los elementos de lista dentro de una lista desordenada.
+console.log("listItems");: Imprime el valor de "listItems" en la consola del navegador.
+<h1 id="b"> ejemplo otra vez</h1>: Define otro encabezado de nivel 1 con el identificador "b" y muestra el texto "ejemplo otra vez".
+const h1elements = document.querySelector("h1");: Declara una constante llamada "h1elements" que referencia al primer elemento "h1" encontrado en el documento.
+console.log("h1elements");: Imprime el valor de "h1elements" en la consola del navegador.
+const list1 = document.querySelector ("miLista");: Declara una constante llamada "list1" que referencia al primer elemento con el nombre de etiqueta "miLista".
+console.log(miLista);: Imprime el valor de "miLista" en la consola del navegador.
+<ul id="miListaForich">: Define otra lista desordenada con el identificador "miListaForich".
+<li>Elemento 1</li> a <li>Elemento 5</li>: Define cinco elementos de lista dentro de la lista desordenada.
+const ListaDeForeach = document.querySelectorAll("ul > li");: Declara una constante llamada "ListaDeForeach" que referencia a los elementos de lista hijos directos de una lista desordenada.
+ListaDeForeach.forEach((miListaForich) => { console.log(miListaForich.innerHTML); });: Itera sobre los elementos de "ListaDeForeach" y muestra el contenido HTML de cada elemento en la consola del navegador.
+const h1 = document.querySelector("h1"); h1.style.color ="blue";: Selecciona el primer elemento "h1" y cambia su color de texto a azul.
+<form id="frm1" onsubmit="return validacion()">: Define un formulario con el identificador "frm1" y especifica que la función "validacion" se llame al enviar el formulario.
+const b = document.forms["frm1"];: Declara una constante llamada "b" que referencia al formulario con el nombre "frm1".
+for(let i = 0 ; i< b.length; i++){ texto += b.elements [i]. value + "<br>"; }: Itera sobre los elementos del formulario "b" y concatena sus valores en la variable "texto" junto con un salto de línea.
+document.getElementById ("p1").innerHTML = texto;: Cambia el contenido HTML del elemento con el identificador "p1" al valor de "texto".
+console.log (b);: Imprime el valor de "b" en la consola del navegador.
+let listota = document.createElement("ul");: Crea un nuevo elemento de lista desordenada y lo asigna a la variable "listota".
+document.body.appendChild(listota);: Agrega el elemento "listota" como un hijo del elemento <body>.
+let elemento1 = document.createElement("li");: Crea un nuevo elemento de lista y lo asigna a la variable "elemento1".
+elemento1.textContent = "Flor";: Establece el contenido de texto del "elemento1" como "Flor".
+listota.appendChild(elemento1);: Agrega el "elemento1" como un hijo del elemento de lista desordenada "listota".
+let elemento2 = document.createElement ("li");: Crea otro nuevo elemento de lista y lo asigna a la variable "elemento2".
+elemento2.textContent = "Jaguar";: Establece el contenido de texto del "elemento2" como "Jaguar".
+listota.appendChild(elemento2);: Agrega el "elemento2" como un hijo del elemento de lista desordenada "listota".
+<label for="numero">Número:</label>: Define una etiqueta para un campo de entrada con el texto "Número:" y un atributo "for" que se asocia al campo de entrada con el mismo identificador.
+<input type="text" id="numero" name="numero">: Define un campo de entrada de texto con el identificador "numero" y el nombre "numero".
+<button type="button" onclick="return validarNumero()">Validar</button>: Define un botón con el texto "Validar" y especifica que la función "validarNumero" se llame al hacer clic en el botón.
+<p id="demo"></p>: Define un párrafo con el identificador "demo".
+document.getElementById("demo").innerHTML = "fecha" + Date();: Cambia el contenido HTML del elemento con el identificador "demo" a la cadena "fecha" seguida de la fecha actual generada por el objeto Date().
+function validarNumero() {...}: Define una función llamada "validarNumero" que se ejecuta al hacer clic en el botón "Validar". Esta función obtiene el valor del campo de entrada "numero", verifica si es un número válido (entre 1 y 10) y muestra un mensaje correspondiente en el elemento con el identificador "demo".
+const button = document.querySelector("input[type='submit']");: Declara una constante llamada "button" que referencia al primer elemento <input> de tipo "submit" encontrado en el documento.
+button.addEventListener("click", (event) => { alert("¡Clickeado con éxito!"); });: Agrega un evento de escucha al botón "button" para el evento de clic. Cuando se hace clic en el botón, se muestra una alerta con el mensaje "¡Clickeado con éxito!".
+function validacion() {...}: Define una función llamada "validacion" que se llama al enviar el formulario "frm1". Esta función verifica si el campo de entrada "profesion" está vacío y muestra una alerta si es así.
+<img id="myImage" src="fotos/moto-moto-president-of-mexico-mexico-city-party-of-the-democratic-revolution-politician-tshirt-politics-election-png-clipart.jpg" alt="Mi imagen">: Define una imagen con el identificador "myImage", origen de la imagen "src" y texto alternativo "alt".
+function cambiarImagen() {...}: Define una función llamada "cambiarImagen" que se ejecuta al hacer clic en la imagen "myImage". Esta función cambia el origen de la imagen a otra imagen cuando se hace clic en ella.
+const imagen = document.getElementById("myImage");: Declara una constante llamada "imagen" que referencia al elemento de imagen con el identificador "myImage".
+imagen.addEventListener("click", cambiarImagen);: Agrega un evento de escucha a la imagen "imagen" para el evento de clic. Cuando se hace clic en la imagen, se ejecuta la función "cambiarImagen".
+window.onload = function() {...}: Define una función anónima que se ejecuta cuando la ventana y todos los recursos de la página se han cargado por completo. Dentro de esta función, se define un temporizador que ejecuta una función "cambiarImagen" cada 3 segundos.
+Este código muestra diferentes ejemplos de manipulación del DOM (Document Object Model) utilizando JavaScript para interactuar con elementos HTML, aplicar estilos, agregar elementos dinámicamente, manejar eventos y realizar validaciones.
