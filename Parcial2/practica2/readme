@@ -1,0 +1,37 @@
+Elemento DOCTYPE: Indica el tipo de documento HTML y su versión.
+Elemento html: Es el elemento raíz del documento HTML.
+Elemento head: Contiene información meta sobre el documento, como el juego de caracteres, el título de la página y referencias a archivos externos.
+Elemento meta: Define los metadatos del documento, como el juego de caracteres y la configuración de la vista en dispositivos móviles.
+Elemento title: Especifica el título de la página web que se mostrará en la pestaña del navegador.
+Elemento link: Establece una relación entre el documento actual y un archivo externo, en este caso, los archivos CSS de Bootstrap y un archivo CSS personalizado llamado "style.css".
+Elemento script: Se utiliza para cargar scripts o archivos JavaScript externos, en este caso, el archivo JavaScript de Bootstrap.
+Elemento body: Contiene todo el contenido visible de la página web.
+Clase CSS "bg-secondary": Se aplica a la etiqueta body y define el color de fondo secundario.
+Elemento main: Define el contenido principal de la página.
+Clases CSS "container alto-100 d-flex justify-content-center align-items-center": Se aplican al elemento main y definen un contenedor con una altura del 100% y estilos flexibles para alinear y justificar el contenido en el centro.
+Elemento div: Se utiliza para agrupar elementos y crear divisiones en la página.
+Clases CSS "row": Se aplican a los elementos div y definen una fila en el sistema de rejilla de Bootstrap.
+Clases CSS "col-12 col-lg-9": Se aplican a un div y definen una columna en el sistema de rejilla de Bootstrap que ocupará 12 columnas en dispositivos pequeños y 9 columnas en dispositivos grandes.
+Elemento article: Representa un contenido independiente en el documento.
+Clases CSS "card shadow h-100 bg-success": Se aplican al elemento article y definen una tarjeta con sombra, altura del 100% y un fondo verde claro.
+Elemento img: Muestra una imagen en la página.
+Atributo src: Especifica la ubicación de la imagen en el sistema de archivos local.
+Clases CSS "border border-secodary border-3 rounded-circle": Se aplican a la imagen y definen un borde, un tamaño de borde y una forma redondeada.
+Elemento div: Se utiliza para agrupar elementos en el interior del artículo.
+Clase CSS "ps-3": Se aplica al div y establece un espacio de relleno a la izquierda.
+Elemento h6: Representa un encabezado de nivel 6.
+Elemento p: Representa un párrafo de texto.
+Clase CSS "fs-6 lh-1": Se aplica a los elementos p y define el tamaño de fuente y la altura de línea.
+Elemento card-body: Contiene el contenido principal de la tarjeta.
+Clases CSS "bg-primary", "bg-warning" y "bg-danger": Se aplican a diferentes artículos y definen diferentes fondos de color para las tarjetas.
+Clases CSS "col-12 col-lg-4": Se aplican a los elementos div y definen columnas que ocupan 12 columnas en dispositivos pequeños y 4 columnas en dispositivos grandes.
+Clase CSS "bg-light": Se aplica al artículo y define un fondo claro para la tarjeta.
+Clase CSS "lh-1": Se aplica al párrafo y define la altura de línea.
+Variable $font-family-sans-serif: Define la fuente principal para el texto en la página web como 'Barlow Semi Condensed' y, si no está disponible, utiliza la fuente sans-serif predeterminada del navegador.
+Variables de color: Establecen diferentes colores mediante variables. Por ejemplo, $primary se establece como #733FC8, $success como #49556B, $dark como #18202D y $secondary como hsl(0, 0%, 100%).
+Media Query @media (min-width: 992px): Aplica estilos específicos cuando la pantalla tiene un ancho mínimo de 992 píxeles. En este caso, la clase .alto-100 tiene una altura del 100% de la altura visible del viewport.
+Regla de estilos .d-flex img: Selecciona todas las imágenes dentro de elementos con la clase .d-flex y establece un ancho fijo de 50 píxeles para esas imágenes.
+Regla de estilos .fondo-card: Define un fondo de tarjeta personalizado mediante una imagen ubicada en C:\Users\mejia\OneDrive\Escritorio\vscodes\P2_parcial2\imagenes\8451988.png. La imagen se repite verticalmente y se posiciona en un 85% desde la izquierda y en la parte superior de la tarjeta.
+Variable $container-max-widths: Define los anchos máximos para los diferentes tamaños de contenedor en Bootstrap.
+Importación del archivo Bootstrap: Importa el archivo bootstrap.scss de la carpeta node_modules/bootstrap/scss para aplicar los estilos y componentes de Bootstrap en la página web.
+
