@@ -1,0 +1,74 @@
+body {
+  font-family: sans-serif;
+  margin: 0 50px;
+  background-color: #e5e5e5;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.app {
+  background-color: #cbe6ff; /* Azul claro (#cbe6ff) */
+  width: 300px;
+  height: 500px;
+  border: 5px solid #ffe082; /* Amarillo claro (#ffe082) */
+  border-radius: 8px;
+  padding: 15px;
+  overflow-y: scroll;
+}
+
+.app::-webkit-scrollbar {
+  width: 0 !important;
+}
+
+#addNew {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: rgba(201, 230, 255, 0.35); /* Azul claro con transparencia (rgba(201, 230, 255, 0.35)) */
+  padding: 5px 10px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.fa-plus {
+  background-color: #ffe082; /* Amarillo claro (#ffe082) */
+  padding: 3px;
+  border-radius: 3px;
+}
+
+#tasks {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 14px;
+}
+
+#tasks div {
+  border: 3px solid #ffe082; /* Amarillo claro (#ffe082) */
+  background-color: #cbe6ff; /* Azul claro (#cbe6ff) */
+  border-radius: 6px;
+  padding: 5px;
+  display: grid;
+  gap: 4px;
+}
+
+#tasks div .options {
+  justify-self: center;
+  display: flex;
+  gap: 20px;
+}
+
+#tasks div .options i {
+  cursor: pointer;
+}
+
+#msg {
+  color: red;
+}
+
+/* Estilos para el modal */
+.modal-content {
+  background-color: #cbe6ff; /* Azul claro (#cbe6ff) */
+}
